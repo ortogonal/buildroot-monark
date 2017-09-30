@@ -1,0 +1,7 @@
+config BR2_PACKAGE_BLUEPOWER
+	bool "Blue Power"
+	depends on BR2_PACKAGE_QT5
+	help
+	  Blue power is a simple application that turns a Monark 828e into BLE mode
+
+	  https://github.com/ortogonal/bluepower
