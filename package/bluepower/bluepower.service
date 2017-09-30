@@ -1,0 +1,13 @@
+[Unit]
+Description=BluePower BLE Powermeter
+After=bluetooth.target hciattach.service
+Wants=hciattach.service
+
+[Service]
+ExecStartPre=/bin/sleep 1
+ExecStartPre=/bin/hciconfig hci0 up
+ExecStart=/usr/bin/bluepower
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

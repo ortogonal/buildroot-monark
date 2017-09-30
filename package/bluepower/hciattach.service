@@ -1,0 +1,9 @@
+[Unit]
+Description=HCI Attache service
+After=bluetooth.target
+
+[Service]
+ExecStart=/bin/hciattach -n /dev/ttyAMA0 bcm43xx 921600 noflow -
+
+[Install]
+WantedBy=multi-user.target

@@ -2477,4 +2477,8 @@ menu "Text editors and viewers"
 	source "package/vim/Config.in"
 endmenu
 
+menu "Monark Blue power"
+	source "package/bluepower/Config.in"
+endmenu
+
 endmenu
