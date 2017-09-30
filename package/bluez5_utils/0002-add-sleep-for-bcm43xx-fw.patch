@@ -1,0 +1,10 @@
+--- bluez5_utils-5.55.old/tools/hciattach_bcm43xx.c	2020-10-11 15:28:58.022880228 +0200
++++ bluez5_utils-5.55/tools/hciattach_bcm43xx.c	2020-10-11 15:32:10.086362541 +0200
+@@ -360,6 +360,7 @@
+ 
+ 	printf("bcm43xx_init\n");
+ 
++	sleep(1);
+ 	if (bcm43xx_reset(fd))
+ 		return -1;
+ 
