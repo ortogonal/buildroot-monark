@@ -1,0 +1,12 @@
+diff -Nur a/tools/hciattach_bcm43xx.c b/tools/hciattach_bcm43xx.c
+--- a/tools/hciattach_bcm43xx.c	2015-03-11 11:01:57.000000000 +0100
++++ b/tools/hciattach_bcm43xx.c	2017-09-14 20:57:07.374411122 +0200
+@@ -379,7 +379,7 @@
+ 			perror("Can't set host baud rate");
+ 			return -1;
+ 		}
+-
++		sleep(1);
+ 		if (bcm43xx_reset(fd))
+ 			return -1;
+ 	}
